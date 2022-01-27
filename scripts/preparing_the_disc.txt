@@ -1,0 +1,20 @@
+Preparing the disk. Create EFI System and Linux LUKS partitions. Create a 1MiB BIOS boot partition at start just in case it is ever needed in the future.
+    gdisk /dev/sda
+    o
+    n
+    [Enter]
+    0
+    +1M
+    ef02
+    n
+    [Enter]
+    [Enter]
+    +550M
+    ef00
+    n
+    [Enter]
+    [Enter]
+    [Enter]
+    8309
+    w
+    

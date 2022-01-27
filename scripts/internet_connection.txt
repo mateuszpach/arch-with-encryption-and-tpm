@@ -1,0 +1,9 @@
+Plug in your Ethernet and go, or for wireless follow the commands. List network interfaces to get available one e.g wlan0:
+    iwctl device list
+
+Scan for available networks and list them:
+    iwctl station <interface> scan
+    iwctl station <interface> get-networks
+
+Connect to the chosen one:
+    iwctl station <interface> connect <ssid> --passphrase <passphrase>
